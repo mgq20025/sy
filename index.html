@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沭阳第三高级中学</title>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* 头部样式 */
+        header {
+            background-color: #990000; /* 朱红色 */
+            color: white;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+       .logo {
+            display: flex;
+            align-items: center;
+        }
+
+       .logo img {
+            width: 60px;
+            height: 60px;
+            margin-right: 15px;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700; /* 鼠标悬停时颜色 */
+        }
+
+        /* 主视觉区样式 */
+       .hero {
+            height: 500px;
+            background-image: url('school_hero.jpg'); /* 替换为学校特色图片 */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+       .hero h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+       .hero p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="logo">
+            <img src="school_logo.png" alt="学校logo">
+            <h1>沭阳第三高级中学</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="学校概况.html">学校概况</a></li>
+                <li><a href="#">校园文化</a></li>
+                <li><a href="#">新闻公告</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 主视觉区 -->
+    <section class="hero">
+        <h2>沭阳第三高级中学欢迎你！</h2>
+        <p>在这里，开启精彩的高中生活</p>
+    </section>
+</body>
+
+</html>

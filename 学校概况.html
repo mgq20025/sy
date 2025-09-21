@@ -1,0 +1,604 @@
+<html lang="zh-CN"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沭阳第三高级中学 - 学校简介</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#990000',
+                        secondary: '#990000',
+                        accent: '#990000',
+                        dark: '#990000',
+                        light: '#990000'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .transition-custom {
+                transition: all 0.3s ease-in-out;
+            }
+            .bg-gradient-custom {
+                background: linear-gradient(135deg, #165DFF 0%, #36BFFA 100%);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+    <!-- 顶部导航 -->
+    <header class="bg-white shadow-sm sticky top-0 z-50 transition-custom">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                    <i class="fa fa-graduation-cap text-white text-xl"></i>
+                </div>
+                <h1 class="text-xl md:text-2xl font-bold text-primary">沭阳第三高级中学</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#overview" class="text-gray-600 hover:text-primary transition-custom">学校概况</a>
+                <a href="#philosophy" class="text-gray-600 hover:text-primary transition-custom">办学理念</a>
+                <a href="#faculty" class="text-gray-600 hover:text-primary transition-custom">师资力量</a>
+                <a href="#campus" class="text-gray-600 hover:text-primary transition-custom">校园环境</a>
+                <a href="#achievements" class="text-gray-600 hover:text-primary transition-custom">荣誉成就</a>
+            </nav>
+            <button class="md:hidden text-gray-600" id="menuToggle">
+                <i class="fa fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- 移动端菜单 -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="#overview" class="text-gray-600 hover:text-primary py-2 transition-custom">学校概况</a>
+                <a href="#philosophy" class="text-gray-600 hover:text-primary py-2 transition-custom">办学理念</a>
+                <a href="#faculty" class="text-gray-600 hover:text-primary py-2 transition-custom">师资力量</a>
+                <a href="#campus" class="text-gray-600 hover:text-primary py-2 transition-custom">校园环境</a>
+                <a href="#achievements" class="text-gray-600 hover:text-primary py-2 transition-custom">荣誉成就</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section class="relative h-[500px] overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('开会.png'); filter: brightness(0.7);"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-dark/70 to-transparent"></div>
+        <div class="relative h-full container mx-auto px-4 flex flex-col justify-center">
+            <h1 class="text-[clamp(2rem,5vw,3.5rem)] font-bold text-white mb-4 text-shadow max-w-2xl">
+                沭阳第三高级中学
+            </h1>
+            <p class="text-[clamp(1rem,2vw,1.25rem)] text-gray-100 mb-8 max-w-xl">
+                立德树人，追求卓越，培养德智体美劳全面发展的社会主义建设者和接班人
+            </p>
+            <a href="#overview" class="inline-flex items-center px-6 py-3 bg-primary hover:bg-primary/90 text-white font-medium rounded-lg transition-custom w-fit">
+                了解更多 <i class="fa fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- 学校概况 -->
+    <section id="overview" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">学校概况</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="order-2 md:order-1">
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        沭阳第三高级中学创建于2023年，是沭阳县教育局直属的重点高级中学，学校坐落于沭阳县华城镇教育路，占地面积150亩，建筑面积6.8万平方米。
+                    </p>
+                    <p class="text-gray-700 mb-4 leading-relaxed">
+                        学校现有60个教学班，在校学生3200余人，教职工260余人。校园布局合理，环境优美，教学设施先进，为学生提供了良好的学习和生活环境。
+                    </p>
+                    <p class="text-gray-700 leading-relaxed">
+                        建校以来，学校始终坚持以育人为本，以质量为生命线，不断深化教育教学改革，办学水平和教育质量稳步提升，赢得了社会各界的广泛赞誉。
+                    </p>
+                    
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8">
+                        <div class="bg-gray-50 p-4 rounded-lg text-center">
+                            <div class="text-2xl font-bold text-primary mb-1">1999</div>
+                            <div class="text-sm text-gray-600">建校年份</div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg text-center">
+                            <div class="text-2xl font-bold text-primary mb-1">150</div>
+                            <div class="text-sm text-gray-600">校园面积(亩)</div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg text-center">
+                            <div class="text-2xl font-bold text-primary mb-1">60</div>
+                            <div class="text-sm text-gray-600">教学班</div>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg text-center">
+                            <div class="text-2xl font-bold text-primary mb-1">3200+</div>
+                            <div class="text-sm text-gray-600">在校学生</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-1 md:order-2 rounded-xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition-custom">
+                    <img src="校园风采.png" alt="沭阳第三高级中学校园风光" class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 办学理念 -->
+    <section id="philosophy" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">办学理念</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-3xl mx-auto">我校始终坚持以学生发展为本，注重培养学生的创新精神和实践能力，促进学生全面发展</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-custom">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-5">
+                        <i class="fa fa-lightbulb-o text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-dark">办学宗旨</h3>
+                    <p class="text-gray-600">
+                        以育人为本，以质量立校，以特色强校，培养具有家国情怀、国际视野、创新精神和实践能力的高素质人才。
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-custom">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-5">
+                        <i class="fa fa-book text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-dark">教育理念</h3>
+                    <p class="text-gray-600">
+                        尊重差异，发展个性，让每个学生都能找到适合自己的发展道路，让每个学生都能绽放生命的精彩。
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-custom">
+                    <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-5">
+                        <i class="fa fa-flag text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-dark">校训校风</h3>
+                    <p class="text-gray-600">
+                        校训：厚德博学，励志笃行<br>
+                        校风：团结奋进，求实创新<br>
+                        教风：敬业爱生，严谨治学<br>
+                        学风：勤学善思，锐意进取
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-gradient-custom text-white p-8 rounded-xl">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h3 class="text-2xl font-bold mb-4">办学目标</h3>
+                    <p class="text-white/90 leading-relaxed">
+                        努力把学校建设成为教育理念先进、办学特色鲜明、师资队伍优良、教学质量上乘、
+                        校园环境优美、社会声誉卓著的现代化优质高中，为国家和社会培养更多高素质的建设者和接班人。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 师资力量 -->
+    <section id="faculty" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">师资力量</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-3xl mx-auto">学校拥有一支结构合理、素质优良、经验丰富的教师队伍，为教育教学质量提供了坚实保障</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-10 items-center mb-12">
+                <div class="rounded-xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition-custom">
+                    <img src="教师团队.png" alt="沭阳第三高级中学教师团队" class="w-full h-auto">
+                </div>
+                
+                <div>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        学校现有教职工260余人，其中专任教师230人，全部具有本科及以上学历，研究生学历教师占比达30%。
+                        学校拥有一支以特级教师、高级教师为骨干，中青年教师为主体的高素质教师队伍。
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="mt-1 mr-4 text-primary">
+                                <i class="fa fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark">名师荟萃</h4>
+                                <p class="text-gray-600 text-sm">拥有特级教师3人，高级教师86人，市级以上学科带头人、骨干教师42人</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="mt-1 mr-4 text-primary">
+                                <i class="fa fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark">教研并重</h4>
+                                <p class="text-gray-600 text-sm">教师积极参与教学研究，近年来发表论文300余篇，承担省级以上课题20余项</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="mt-1 mr-4 text-primary">
+                                <i class="fa fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark">师德高尚</h4>
+                                <p class="text-gray-600 text-sm">重视师德师风建设，多名教师获得"全国优秀教师""江苏省优秀教育工作者"等荣誉称号</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="mt-1 mr-4 text-primary">
+                                <i class="fa fa-check-circle"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark">持续发展</h4>
+                                <p class="text-gray-600 text-sm">建立完善的教师培训和发展机制，定期组织教师参加各类培训和学术交流活动</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 教师风采 -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-center mb-8 text-dark">教师风采</h3>
+                
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-custom">
+                        <img src="张家乐.png" alt="张老师照片" class="w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg text-dark">张家乐 老师</h4>
+                            <p class="text-primary text-sm mb-2">化学特级教师</p>
+                            <p class="text-gray-600 text-sm">江苏省优秀教师，市学科带头人，从事化学教学3年</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-custom">
+                        <img src="李少阳.png" alt="李老师照片" class="w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg text-dark">李少阳 老师</h4>
+                            <p class="text-primary text-sm mb-2">历史高级教师</p>
+                            <p class="text-gray-600 text-sm">市优秀教育工作者，教学能手，多次获得历史竞赛一等奖</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-custom">
+                        <img src="仲.png" alt="仲老师照片" class="w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg text-dark">仲婧怡 老师</h4>
+                            <p class="text-primary text-sm mb-2">英语高级教师</p>
+                            <p class="text-gray-600 text-sm">学士学位，曾赴英国交流学习，发表论文20余篇</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-custom">
+                        <img src="1.png" alt="刘老师照片" class="w-full h-64 object-cover">
+                        <div class="p-4">
+                            <h4 class="font-bold text-lg text-dark">学生</h4>
+                            <p class="text-primary text-sm mb-2">所有学生</p>
+                            <p class="text-gray-600 text-sm">优秀学生</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 校园环境 -->
+    <section id="campus" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">校园环境</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-3xl mx-auto">学校环境优美，设施完善，为学生提供了良好的学习和生活条件</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                <div class="overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-custom">
+                    <img src="校园风采.png" class="w-full h-64 object-cover transform hover:scale-110 transition-custom duration-500">
+                    <div class="p-4 bg-white">
+                        <h3 class="font-bold text-dark">现代化教学楼</h3>
+                        <p class="text-gray-600 text-sm">配备多媒体教学设备，宽敞明亮，环境舒适</p>
+                    </div>
+                </div>
+                
+                <div class="overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-custom">
+                    <img src="校园风采.png" alt="图书馆" class="w-full h-64 object-cover transform hover:scale-110 transition-custom duration-500">
+                    <div class="p-4 bg-white">
+                        <h3 class="font-bold text-dark">图书馆</h3>
+                        <p class="text-gray-600 text-sm">藏书15万余册，设有阅览室、电子阅览室等</p>
+                    </div>
+                </div>
+                
+                <div class="overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-custom">
+                    <img src="校园风采.png" alt="实验室" class="w-full h-64 object-cover transform hover:scale-110 transition-custom duration-500">
+                    <div class="p-4 bg-white">
+                        <h3 class="font-bold text-dark">实验楼</h3>
+                        <p class="text-gray-600 text-sm">配备先进的理化生实验室和科技创新实验室</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-custom">
+                    <img src="校园风采.png" alt="体育场" class="w-full h-64 object-cover transform hover:scale-110 transition-custom duration-500">
+                    <div class="p-4 bg-white">
+                        <h3 class="font-bold text-dark">运动场馆</h3>
+                        <p class="text-gray-600 text-sm">标准田径场、篮球场、足球场、体育馆等设施齐全</p>
+                    </div>
+                </div>
+                
+                <div class="overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-custom">
+                    <img src="校园风采.png" alt="学生宿舍" class="w-full h-64 object-cover transform hover:scale-110 transition-custom duration-500">
+                    <div class="p-4 bg-white">
+                        <h3 class="font-bold text-dark">学生宿舍</h3>
+                        <p class="text-gray-600 text-sm">公寓式住宿，配备空调、热水，环境整洁舒适</p>
+                    </div>
+                </div>
+                
+                <div class="overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-custom">
+                    <img src="校园风采.png" alt="校园绿化" class="w-full h-64 object-cover transform hover:scale-110 transition-custom duration-500">
+                    <div class="p-4 bg-white">
+                        <h3 class="font-bold text-dark">校园绿化</h3>
+                        <p class="text-gray-600 text-sm">绿树成荫，鸟语花香，绿化率达45%以上</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 荣誉成就 -->
+    <section id="achievements" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-dark mb-4">荣誉成就</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+                <p class="mt-4 text-gray-600 max-w-3xl mx-auto">多年来，学校在教育教学、学科竞赛、文体活动等方面取得了丰硕成果</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-10 items-center mb-16">
+                <div>
+                    <h3 class="text-2xl font-bold text-dark mb-6">办学荣誉</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fa fa-trophy text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark text-lg">省级荣誉</h4>
+                                <p class="text-gray-600">江苏省二星级普通高中、江苏省文明单位、江苏省教育先进集体、江苏省绿色学校、江苏省平安校园</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fa fa-certificate text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark text-lg">市级荣誉</h4>
+                                <p class="text-gray-600">宿迁市教育教学先进单位、宿迁市特色学校、宿迁市师德建设先进集体、宿迁市艺术教育特色学校</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                                <i class="fa fa-award text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-dark text-lg">教学成果</h4>
+                                <p class="text-gray-600">连续多年荣获沭阳县高中教育教学质量一等奖，高考本科上线率逐年提升，稳居全市前列</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="rounded-xl overflow-hidden shadow-xl transform hover:scale-[1.02] transition-custom">
+                    <img src="校园风采.png" alt="学校荣誉墙" class="w-full h-auto">
+                </div>
+            </div>
+            
+            <!-- 学生成果 -->
+            <div>
+                <h3 class="text-2xl font-bold text-center mb-8 text-dark">学生成果</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-custom">
+                        <div class="text-center mb-4">
+                            <i class="fa fa-graduation-cap text-4xl text-primary"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-center mb-3 text-dark">升学成果</h4>
+                        <p class="text-gray-600 text-center">
+                            近五年来，共有3000余名学生考入本院校。
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-custom">
+                        <div class="text-center mb-4">
+                            <i class="fa fa-lightbulb-o text-4xl text-primary"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-center mb-3 text-dark">学科竞赛</h4>
+                        <p class="text-gray-600 text-center">
+                            学生在全国、省、市各级学科竞赛中屡获佳绩，近三年共获得国家级奖项56项，省级奖项200余项。
+                        </p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-custom">
+                        <div class="text-center mb-4">
+                            <i class="fa fa-music text-4xl text-primary"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-center mb-3 text-dark">文体活动</h4>
+                        <p class="text-gray-600 text-center">
+                            在艺术、体育等方面表现突出，多次在省市比赛中获奖，学校篮球队、合唱团、舞蹈队成绩斐然。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系信息 -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-10">
+                <div>
+                    <h2 class="text-2xl font-bold mb-6">联系我们</h2>
+                    <p class="text-gray-300 mb-8">
+                        欢迎社会各界人士、家长和学生前来我校参观考察，咨询学校相关事宜。
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center mr-4">
+                                <i class="fa fa-map-marker text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">学校地址</h4>
+                                <p class="text-gray-400">江苏省沭阳县华城镇</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center mr-4">
+                                <i class="fa fa-phone text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">联系电话</h4>
+                                <p class="text-gray-400">0527-87654321（办公室）</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center mr-4">
+                                <i class="fa fa-envelope text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">电子邮箱</h4>
+                                <p class="text-gray-400">sy3z@163.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-semibold mb-4">关注我们</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 bg-primary/20 hover:bg-primary/40 rounded-full flex items-center justify-center transition-custom">
+                                <i class="fa fa-weixin text-white"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-primary/20 hover:bg-primary/40 rounded-full flex items-center justify-center transition-custom">
+                                <i class="fa fa-weibo text-white"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-primary/20 hover:bg-primary/40 rounded-full flex items-center justify-center transition-custom">
+                                <i class="fa fa-youtube-play text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="text-2xl font-bold mb-6">学校地图</h2>
+                    <div class="bg-gray-800 rounded-xl overflow-hidden h-64 relative">
+                        <!-- 这里使用图片替代实际地图 -->
+                        <img src="校园风采.png"学校位置地图" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center bg-dark/40">
+                            <span class="text-white font-medium">学校位置地图</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400 text-sm">
+                © 2023 沭阳第三高级中学 版权所有 | 苏ICP备XXXXXXXX号
+            </p>
+            <p class="text-gray-500 text-xs mt-2">
+                地址：江苏省沭阳县南部新城学府路88号 | 电话：0527-87654321
+            </p>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button id="backToTop" class="fixed bottom-6 right-6 w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-custom">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // 移动端菜单切换
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                // 关闭移动端菜单
+                mobileMenu.classList.add('hidden');
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // 返回顶部按钮
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+            
+            // 导航栏滚动效果
+            const header = document.querySelector('header');
+            if (window.pageYOffset > 100) {
+                header.classList.add('py-2', 'shadow');
+                header.classList.remove('py-3');
+            } else {
+                header.classList.add('py-3');
+                header.classList.remove('py-2', 'shadow');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+
+</body></html>
